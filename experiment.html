@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Rat Experiment That Accidentally Solved Hair Loss | Dr. James Hanley</title>
+<meta name="description" content="A Miami doctor was testing red light therapy on rats, guinea pigs and chimpanzees. When all three grew their hair back at Day 70 — he tried it on himself.">
+<style>
+  :root {
+    --navy: #0D1B2A;
+    --navy-mid: #1B3A5C;
+    --blue-accent: #2E7DE0;
+    --red: #C0392B;
+    --gold: #C9A84C;
+    --ink: #1a1a1a;
+    --ink-mute: #6B7280;
+    --bg: #F9F8F6;
+    --white: #ffffff;
+    --border: #E5E7EB;
+    --r: 8px;
+    --max: 720px;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 18px;
+    line-height: 1.75;
+  }
+
+  /* ── TOP BAR ── */
+  .top-bar {
+    background: var(--navy);
+    color: var(--white);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    padding: 10px 16px;
+    letter-spacing: .03em;
+  }
+  .top-bar strong { color: #FFD700; }
+
+  /* ── PUBLICATION HEADER ── */
+  .pub-header {
+    border-bottom: 3px solid var(--navy);
+    padding: 16px 20px;
+    text-align: center;
+    background: var(--white);
+  }
+  .pub-name {
+    font-family: 'Times New Roman', serif;
+    font-size: 13px;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 4px;
+  }
+  .pub-title {
+    font-family: 'Times New Roman', serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--navy);
+    letter-spacing: .02em;
+  }
+  .pub-meta {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: var(--ink-mute);
+    margin-top: 8px;
+    border-top: 1px solid var(--border);
+    padding-top: 8px;
+  }
+
+  /* ── WRAP ── */
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--navy);
+    padding: 60px 20px 50px;
+    text-align: center;
+  }
+  .hero-eyebrow {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+  .hero h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: clamp(28px, 5vw, 46px);
+    color: var(--white);
+    line-height: 1.2;
+    max-width: 680px;
+    margin: 0 auto 20px;
+    font-weight: bold;
+  }
+  .hero-sub {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: rgba(255,255,255,.75);
+    max-width: 560px;
+    margin: 0 auto 32px;
+    line-height: 1.6;
+  }
+  .hero-meta {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: rgba(255,255,255,.5);
+    border-top: 1px solid rgba(255,255,255,.15);
+    padding-top: 16px;
+    margin-top: 16px;
+  }
+
+  /* ── ARTICLE BODY ── */
+  .article { padding: 48px 0; }
+  .article p {
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #1a1a1a;
+  }
+  .article h2 {
+    font-family: 'Times New Roman', serif;
+    font-size: clamp(22px, 3vw, 28px);
+    color: var(--navy);
+    margin: 48px 0 16px;
+    line-height: 1.3;
+    border-left: 4px solid var(--gold);
+    padding-left: 16px;
+  }
+  .article h3 {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin: 40px 0 8px;
+  }
+
+  /* ── DROP CAP ── */
+  .article > .wrap > p:first-of-type::first-letter {
+    float: left;
+    font-size: 72px;
+    line-height: .8;
+    margin: 4px 8px 0 0;
+    font-family: 'Times New Roman', serif;
+    color: var(--navy);
+    font-weight: bold;
+  }
+
+  /* ── PULL QUOTE ── */
+  .pull-quote {
+    border-left: 4px solid var(--gold);
+    margin: 40px 0;
+    padding: 20px 24px;
+    background: var(--white);
+    border-radius: 0 var(--r) var(--r) 0;
+  }
+  .pull-quote p {
+    font-family: 'Times New Roman', serif;
+    font-size: 22px;
+    font-style: italic;
+    color: var(--navy);
+    margin: 0 0 8px;
+    line-height: 1.5;
+  }
+  .pull-quote cite {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    font-style: normal;
+  }
+
+  /* ── DAY MARKER ── */
+  .day-section {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 32px;
+    margin: 40px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .day-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--navy);
+  }
+  .day-badge {
+    display: inline-block;
+    background: var(--navy);
+    color: var(--white);
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+  }
+  .day-section p {
+    margin-bottom: 0;
+    font-size: 17px;
+  }
+
+  /* ── SPECIES GRID ── */
+  .species-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 32px 0;
+  }
+  .species-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 24px 16px;
+    text-align: center;
+  }
+  .species-icon { font-size: 36px; margin-bottom: 12px; }
+  .species-name {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+  .species-result {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: var(--ink-mute);
+    line-height: 1.5;
+  }
+  .species-result strong {
+    display: block;
+    font-size: 20px;
+    color: #16a34a;
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+
+  /* ── DNA CALLOUT ── */
+  .dna-callout {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+    border-radius: var(--r);
+    padding: 36px 32px;
+    margin: 40px 0;
+    text-align: center;
+    color: var(--white);
+  }
+  .dna-number {
+    font-family: 'Times New Roman', serif;
+    font-size: 72px;
+    font-weight: bold;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .dna-label {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.7);
+    margin-bottom: 16px;
+  }
+  .dna-text {
+    font-family: Georgia, serif;
+    font-size: 17px;
+    color: rgba(255,255,255,.9);
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  /* ── BEFORE / AFTER ── */
+  .before-after {
+    margin: 48px 0;
+  }
+  .before-after-label {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .ba-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .ba-panel {
+    background: #e5e7eb;
+    border-radius: var(--r);
+    aspect-ratio: 3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .ba-panel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .ba-tag {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: var(--navy);
+    color: var(--white);
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 4px;
+    letter-spacing: .06em;
+  }
+  .ba-placeholder {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--ink-mute);
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+  }
+
+  /* ── TESTIMONIALS ── */
+  .testimonials { padding: 48px 0; background: var(--white); }
+  .section-label {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .section-title {
+    font-family: 'Times New Roman', serif;
+    font-size: clamp(22px, 3vw, 30px);
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .testi-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .testi-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 24px;
+  }
+  .testi-stars {
+    color: #F59E0B;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .testi-text {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--ink);
+    margin-bottom: 14px;
+    font-style: italic;
+  }
+  .testi-author {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--navy);
+  }
+  .testi-tag {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #16a34a;
+    font-weight: bold;
+    letter-spacing: .04em;
+  }
+  .testi-day {
+    display: inline-block;
+    background: var(--navy);
+    color: var(--white);
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin-left: 8px;
+  }
+
+  /* ── PRODUCT SECTION ── */
+  .product-section {
+    background: var(--navy);
+    padding: 64px 20px;
+    text-align: center;
+  }
+  .product-eyebrow {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+  .product-title {
+    font-family: 'Times New Roman', serif;
+    font-size: clamp(28px, 4vw, 42px);
+    color: var(--white);
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  .product-sub {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: rgba(255,255,255,.7);
+    max-width: 500px;
+    margin: 0 auto 32px;
+    line-height: 1.6;
+  }
+  .product-img {
+    max-width: 320px;
+    margin: 0 auto 32px;
+    display: block;
+  }
+  .product-img img {
+    width: 100%;
+    border-radius: var(--r);
+  }
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-width: 520px;
+    margin: 0 auto 40px;
+    text-align: left;
+  }
+  .feature-item {
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: var(--r);
+    padding: 16px;
+  }
+  .feature-icon {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  .feature-title {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--white);
+    margin-bottom: 4px;
+  }
+  .feature-desc {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: rgba(255,255,255,.6);
+    line-height: 1.4;
+  }
+
+  /* ── PRICE CARD ── */
+  .price-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 36px 32px;
+    max-width: 420px;
+    margin: 0 auto 24px;
+    text-align: center;
+  }
+  .price-label {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 8px;
+  }
+  .price-amount {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  .price-now {
+    font-family: Arial, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--navy);
+  }
+  .price-was {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: var(--ink-mute);
+    text-decoration: line-through;
+  }
+  .price-save {
+    display: inline-block;
+    background: #dcfce7;
+    color: #16a34a;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .price-features {
+    list-style: none;
+    margin-bottom: 24px;
+    text-align: left;
+  }
+  .price-features li {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: var(--ink);
+    padding: 6px 0;
+    border-bottom: 1px solid var(--border);
+    padding-left: 24px;
+    position: relative;
+  }
+  .price-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #16a34a;
+    font-weight: bold;
+  }
+
+  /* ── BUTTONS ── */
+  .btn {
+    display: inline-block;
+    padding: 18px 36px;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: opacity .2s;
+    letter-spacing: .02em;
+  }
+  .btn:hover { opacity: .9; }
+  .btn-primary {
+    background: #C0392B;
+    color: var(--white);
+  }
+  .btn-block { display: block; width: 100%; text-align: center; }
+  .btn-large { padding: 22px 40px; font-size: 18px; }
+
+  /* ── GUARANTEE ── */
+  .guarantee {
+    background: var(--bg);
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .guarantee-seal {
+    width: 100px;
+    height: 100px;
+    background: var(--navy);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    border: 4px solid var(--gold);
+  }
+  .guarantee-seal .big {
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--white);
+    line-height: 1;
+  }
+  .guarantee-seal .small {
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .guarantee h2 {
+    font-family: 'Times New Roman', serif;
+    font-size: clamp(22px, 3vw, 30px);
+    color: var(--navy);
+    margin-bottom: 16px;
+    line-height: 1.3;
+  }
+  .guarantee p {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: var(--ink-mute);
+    max-width: 520px;
+    margin: 0 auto 32px;
+    line-height: 1.7;
+  }
+
+  /* ── DR PROFILE ── */
+  .dr-profile {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--r);
+    padding: 32px;
+    margin: 48px 0;
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  .dr-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--navy);
+    flex-shrink: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+  }
+  .dr-avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .dr-info h3 {
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    color: var(--navy);
+    margin-bottom: 4px;
+  }
+  .dr-info .dr-title {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: var(--ink-mute);
+    margin-bottom: 12px;
+  }
+  .dr-info p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: var(--ink);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* ── STICKY BAR ── */
+  .sticky-bar {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: var(--navy);
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    z-index: 100;
+    transform: translateY(100%);
+    transition: transform .3s ease;
+    box-shadow: 0 -4px 20px rgba(0,0,0,.3);
+  }
+  .sticky-bar.show { transform: translateY(0); }
+  .sticky-left strong {
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--white);
+  }
+  .sticky-left span {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: rgba(255,255,255,.6);
+  }
+  .sticky-bar .btn { padding: 12px 24px; font-size: 14px; white-space: nowrap; }
+
+  /* ── DIVIDER ── */
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 40px 0;
+  }
+
+  /* ── COUNTDOWN ── */
+  .countdown-bar {
+    background: var(--red);
+    color: var(--white);
+    text-align: center;
+    padding: 10px 16px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: .03em;
+  }
+  #countdown { font-size: 18px; }
+
+  /* ── TRUST BADGES ── */
+  .trust-badges {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 32px 0;
+  }
+  .trust-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: rgba(255,255,255,.8);
+  }
+  .trust-badge span { font-size: 20px; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy);
+    color: rgba(255,255,255,.4);
+    text-align: center;
+    padding: 32px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.8;
+  }
+  footer a { color: rgba(255,255,255,.4); }
+
+  @media (max-width: 600px) {
+    .species-grid { grid-template-columns: 1fr; }
+    .features-grid { grid-template-columns: 1fr; }
+    .ba-grid { grid-template-columns: 1fr; }
+    .dr-profile { flex-direction: column; }
+    .sticky-left { display: none; }
+    .sticky-bar { justify-content: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  🚚 Free Shipping · <strong>90-Day Money Back Guarantee</strong> · Over 2,400 Five-Star Reviews
+</div>
+
+<!-- COUNTDOWN -->
+<div class="countdown-bar">
+  ⏰ Limited offer ends in <span id="countdown">23:59:59</span> — Free shipping included
+</div>
+
+<!-- PUBLICATION HEADER -->
+<div class="pub-header">
+  <div class="pub-name">Health &amp; Science Discovery</div>
+  <div class="pub-title">The Journal of At-Home Medical Research</div>
+  <div class="pub-meta">Miami, Florida · Peer Reviewed by Dr. James Hanley, MD · Updated May 2026</div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-eyebrow">Exclusive Investigation</div>
+    <h1>The Rat Experiment That Accidentally Solved Hair Loss</h1>
+    <p class="hero-sub">A Miami doctor was testing red light therapy on three different species. When rats, guinea pigs, AND chimpanzees all grew their hair back at Day 70 — he decided to try it on himself.</p>
+    <div class="hero-meta">
+      By the Editorial Team &nbsp;·&nbsp; Dr. James Hanley, Miami FL &nbsp;·&nbsp; May 2026 &nbsp;·&nbsp; 8 min read
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<section class="article">
+  <div class="wrap">
+
+    <p>Dr. James Hanley wasn't trying to solve his own hair loss.</p>
+
+    <p>That wasn't the plan. He was a researcher. He had a lab, a protocol, and a very specific question he needed to answer: could red light therapy stimulate dormant hair follicles and trigger regrowth in mammals?</p>
+
+    <p>The experiment he designed would take 70 days. He expected mixed results. He expected variables. He expected the kind of inconclusive data that sends you back to the drawing board.</p>
+
+    <p>He did not expect what actually happened.</p>
+
+    <hr class="divider">
+
+    <h2>The Experiment</h2>
+
+    <p>Three species. Three separate controlled groups. One protocol.</p>
+
+    <div class="species-grid">
+      <div class="species-card">
+        <div class="species-icon">🐀</div>
+        <div class="species-name">Rats</div>
+        <div class="species-result">
+          <strong>✓ Day 70</strong>
+          Most hair regrown. Follicles fully reactivated.
+        </div>
+      </div>
+      <div class="species-card">
+        <div class="species-icon">🐹</div>
+        <div class="species-name">Guinea Pigs</div>
+        <div class="species-result">
+          <strong>✓ Day 70</strong>
+          Most hair regrown. Same timeline. Same result.
+        </div>
+      </div>
+      <div class="species-card">
+        <div class="species-icon">🦧</div>
+        <div class="species-name">Chimpanzees</div>
+        <div class="species-result">
+          <strong>✓ Day 70</strong>
+          Most hair regrown. 98% human DNA. Same outcome.
+        </div>
+      </div>
+    </div>
+
+    <p>Each group was treated with the same red light therapy device at a consistent wavelength and frequency. Each group was documented from Day 1. Measured, photographed, and tracked with the same clinical rigour Dr. Hanley applied to all of his research.</p>
+
+    <p>By Day 70, all three groups had grown most of their hair back.</p>
+
+    <p>Not one species. Not two. All three — independently, consistently, across completely different biology, different coat types, different baselines — responding to the same red light protocol on the same timeline and producing the same result.</p>
+
+    <div class="pull-quote">
+      <p>"When one species responds, you note it and keep going. When three completely different species respond at the same rate on the same timeline — that's not a coincidence. That's the mechanism working."</p>
+      <cite>— Dr. James Hanley, Miami FL</cite>
+    </div>
+
+    <hr class="divider">
+
+    <h2>The Detail He Couldn't Ignore</h2>
+
+    <p>The results across all three species were remarkable. But one detail kept pulling at Dr. Hanley's attention above everything else.</p>
+
+    <p>The chimpanzees.</p>
+
+    <div class="dna-callout">
+      <div class="dna-number">98%</div>
+      <div class="dna-label">Shared Human DNA — Chimpanzees</div>
+      <p class="dna-text">Chimpanzees share 98% of human DNA. Their follicle biology is not merely similar to humans — it is nearly identical. The same cellular structures. The same growth cycle phases. The same dormancy triggers.</p>
+    </div>
+
+    <p>When red light therapy regrew the hair of rats and guinea pigs, that was compelling. When it produced the same result in chimpanzees — animals that are, genetically speaking, almost human — a very specific and unavoidable question formed in Dr. Hanley's mind.</p>
+
+    <p>He had been quietly watching his own hairline recede for the better part of a decade. Like most men, he had tried the usual things. Minoxidil. Specialised shampoos. Supplements that promised more than they delivered. Nothing had worked.</p>
+
+    <p>Now he was standing in his Miami lab looking at three species of animals with visibly fuller coats — one of which shared 98% of his DNA — holding a red light therapy device, and trying to talk himself out of the obvious question.</p>
+
+    <p>He couldn't.</p>
+
+    <div class="pull-quote">
+      <p>"If it works on an animal that is 98% human — what is it going to do to an actual human scalp?"</p>
+      <cite>— Dr. James Hanley</cite>
+    </div>
+
+    <hr class="divider">
+
+    <!-- DR PROFILE -->
+    <div class="dr-profile">
+      <div class="dr-avatar">👨‍⚕️</div>
+      <div class="dr-info">
+        <h3>Dr. James Hanley</h3>
+        <div class="dr-title">Researcher &amp; Founder, Torven · Miami, Florida</div>
+        <p>Dr. Hanley has spent over a decade researching photobiomodulation and its applications in mammalian tissue regeneration. His animal trial results — published internally across three species — formed the scientific foundation for Torven.</p>
+      </div>
+    </div>
+
+    <h2>Day 1 — The Human Trial Begins</h2>
+
+    <div class="day-section">
+      <span class="day-badge">Day 1</span>
+      <p>Dr. Hanley adapted the red light therapy protocol for human use. He adjusted the wavelength to 655nm — the frequency the research consistently pointed to for follicle stimulation — and configured the device into a wearable cap. He documented everything. Before photographs. Measurements at the hairline and crown. A strict protocol. He put the cap on and started the timer.</p>
+    </div>
+
+    <h2>Day 30 — Something Is Happening</h2>
+
+    <div class="day-section">
+      <span class="day-badge">Day 30</span>
+      <p>The change was subtle enough that Dr. Hanley almost talked himself out of seeing it. Almost. He pulled up the Day 1 photographs and compared them to what he was looking at now. The before photos didn't lie. There was density at the hairline that hadn't been documented on Day 1. The same follicle activation he had documented in his lab animals was presenting in his own scalp. He kept going.</p>
+    </div>
+
+    <h2>Day 70 — The Same Timeline</h2>
+
+    <div class="day-section">
+      <span class="day-badge">Day 70</span>
+      <p>Day 70 was not a coincidence. It was the same milestone at which all three species in his experiment had shown their most significant results. The hairline that had been retreating for a decade had stopped retreating. The density across the crown had changed in a way that was visible without measurement. Colleagues in the lab had started asking questions. One of the nurses asked if she could put her husband on the protocol.</p>
+    </div>
+
+    <h2>Day 90 — Colleagues Noticed First</h2>
+
+    <div class="day-section">
+      <span class="day-badge">Day 90</span>
+      <p>Dr. Hanley's colleagues noticed before he announced anything. "One of the senior researchers asked me what I'd done differently," he said. "I told her I'd been running a human trial." The Day 1 to Day 90 progression photographs were, by any clinical standard, significant. The hairline that had been receding was no longer receding. The follicles that had been dormant were active.</p>
+    </div>
+
+    <!-- BEFORE AFTER -->
+    <div class="before-after">
+      <div class="before-after-label">Dr. James Hanley — Documented Progression</div>
+      <div class="ba-grid">
+        <div class="ba-panel">
+          <div class="ba-placeholder">
+            <div style="font-size:40px;margin-bottom:8px">📷</div>
+            Before photo<br>coming soon
+          </div>
+          <span class="ba-tag">Day 1</span>
+        </div>
+        <div class="ba-panel">
+          <div class="ba-placeholder">
+            <div style="font-size:40px;margin-bottom:8px">📷</div>
+            After photo<br>coming soon
+          </div>
+          <span class="ba-tag">Day 90</span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <h2>What Dr. Hanley Built Next</h2>
+
+    <p>The cap Dr. Hanley had modified for his own protocol was not a consumer product. It was a research instrument — functional, precise, and completely unsuitable for everyday use by anyone without a lab background.</p>
+
+    <p>But the results across the animal trials and his own 90-day self-study were too consistent and too significant to keep inside the lab.</p>
+
+    <p>He spent the following months engineering the protocol into something any man could use at home. The science didn't change — 655nm wavelength, the frequency every study pointed to. The diode count went to 271 — full scalp coverage, consistent delivery, no dead zones. The form factor became a wearable cap.</p>
+
+    <div class="pull-quote">
+      <p>"The science isn't new. What was missing was a way for men to actually use it — consistently, at home, without making it a second job. That's what I built."</p>
+      <cite>— Dr. James Hanley</cite>
+    </div>
+
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="wrap">
+    <div class="section-label">Verified Customer Results</div>
+    <h2 class="section-title">2,400+ Men. The Same Story.</h2>
+    <div class="testi-grid">
+
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"I was completely sceptical. I've tried everything. Nothing worked. By Day 45 my wife asked what I was doing differently."</p>
+        <div class="testi-author">Marcus T. <span class="testi-day">Day 45</span></div>
+        <div class="testi-tag">✓ Verified Purchase</div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"I almost didn't order because I've been burned before. Decided to try because of the 90-day guarantee. At Day 60 I took my before and after photos and I genuinely couldn't believe it was the same person."</p>
+        <div class="testi-author">Daniel R. <span class="testi-day">Day 60</span></div>
+        <div class="testi-tag">✓ Verified Purchase</div>
+      </div>
+
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"The fact that a doctor developed this from actual animal research made me trust it enough to try it. I'm at Day 80 and I'm not stopping."</p>
+        <div class="testi-author">James W. <span class="testi-day">Day 80</span></div>
+        <div class="testi-tag">✓ Verified Purchase</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT -->
+<section class="product-section" id="get-torven">
+  <div class="wrap">
+    <div class="product-eyebrow">Built From Real Research</div>
+    <h2 class="product-title">Introducing Torven</h2>
+    <p class="product-sub">The same red light therapy Dr. Hanley used in his lab and on himself — engineered into a cap you wear at home.</p>
+
+    <div class="product-img">
+      <img src="Offer%20image.png" alt="Torven Red Light Therapy Cap">
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">💡</div>
+        <div class="feature-title">655nm Wavelength</div>
+        <div class="feature-desc">The exact frequency Dr. Hanley's research identified for follicle stimulation</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">⚡</div>
+        <div class="feature-title">271 Diodes</div>
+        <div class="feature-desc">Full scalp coverage. No dead zones. Consistent delivery every session.</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🚫</div>
+        <div class="feature-title">Zero Chemicals</div>
+        <div class="feature-desc">No minoxidil. No prescriptions. No side effects. Just light.</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">⏱️</div>
+        <div class="feature-title">Minutes Per Day</div>
+        <div class="feature-desc">Fits into your morning or evening routine without disruption.</div>
+      </div>
+    </div>
+
+    <div class="price-card">
+      <div class="price-label">One-Time Purchase · No Subscription</div>
+      <div class="price-amount">
+        <span class="price-now">$99</span>
+        <span class="price-was">$149</span>
+      </div>
+      <div class="price-save">SAVE $50 · 34% OFF</div>
+      <ul class="price-features">
+        <li>1x Torven Red Light Therapy Cap</li>
+        <li>1x USB-C Charging Cable</li>
+        <li>1x Quick-Start Guide</li>
+        <li>Free Shipping</li>
+        <li>90-Day Money-Back Guarantee</li>
+      </ul>
+      <a href="https://torvenofficial.com/products/torven-hair-regrowth-red-light-therapy" class="btn btn-primary btn-block btn-large">
+        Start My 90-Day Trial →
+      </a>
+    </div>
+
+    <div class="trust-badges">
+      <div class="trust-badge"><span>🔒</span> Secure Checkout</div>
+      <div class="trust-badge"><span>🚚</span> Free Shipping</div>
+      <div class="trust-badge"><span>↩️</span> 90-Day Guarantee</div>
+      <div class="trust-badge"><span>⭐</span> 2,400+ Reviews</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="guarantee">
+  <div class="wrap">
+    <div class="guarantee-seal">
+      <div class="big">90</div>
+      <div class="small">Day Guarantee</div>
+    </div>
+    <h2>Try It For 90 Days.<br>Results Or Every Dollar Back.</h2>
+    <p>Dr. Hanley ran his own experiment for 90 days before he was willing to call the results significant. He offers every Torven customer the same window. 90 days to use the protocol consistently — and if you don't see results you're satisfied with, every dollar back. No questions. No return shipping. No fine print.</p>
+    <a href="https://torvenofficial.com/products/torven-hair-regrowth-red-light-therapy" class="btn btn-primary btn-large">
+      Get Torven — Risk Free Today
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Torven Official · torvenofficial.com · Miami, Florida</p>
+  <p style="margin-top:8px">Results may vary. These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+  <p style="margin-top:8px"><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a> · <a href="#">Contact Us</a></p>
+</footer>
+
+<!-- STICKY BAR -->
+<div class="sticky-bar" id="sticky-bar">
+  <div class="sticky-left">
+    <strong>Torven Red Light Cap</strong>
+    <span>Dr. Hanley's own protocol · 90-day guarantee</span>
+  </div>
+  <a href="https://torvenofficial.com/products/torven-hair-regrowth-red-light-therapy" class="btn btn-primary">
+    Start My Trial — $99
+  </a>
+</div>
+
+<script>
+  /* ── COUNTDOWN ── */
+  (function() {
+    var key = 'torven_exp_cd';
+    var stored = sessionStorage.getItem(key);
+    var end;
+    if (stored) {
+      end = parseInt(stored, 10);
+    } else {
+      end = Date.now() + 24 * 3600 * 1000;
+      sessionStorage.setItem(key, end);
+    }
+    var el = document.getElementById('countdown');
+    function pad(n) { return n < 10 ? '0' + n : n; }
+    function tick() {
+      var rem = Math.max(0, Math.floor((end - Date.now()) / 1000));
+      var h = Math.floor(rem / 3600);
+      var m = Math.floor((rem % 3600) / 60);
+      var s = rem % 60;
+      el.textContent = pad(h) + ':' + pad(m) + ':' + pad(s);
+      if (rem > 0) setTimeout(tick, 1000);
+    }
+    tick();
+  })();
+
+  /* ── STICKY BAR ── */
+  var stickyBar = document.getElementById('sticky-bar');
+  var hero = document.querySelector('.hero');
+  if (stickyBar && hero && 'IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function(entries) {
+      stickyBar.classList.toggle('show', !entries[0].isIntersecting);
+    }, { threshold: 0 });
+    obs.observe(hero);
+  }
+</script>
+
+</body>
+</html>
